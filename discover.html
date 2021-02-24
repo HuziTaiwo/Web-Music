@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="./discover.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="./images/logo.png" alt="soundwave">
+                <h1>Soundwave</h1>
+            </div>
+            <ul class="links">
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul> 
+            <div id="burger" class="burger">
+                <div class="stroke1"></div>
+                <div class="stroke2"></div>
+                <div class="stroke3"></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="wrapper">
+            <div class="discover">
+                <div class="info">
+                    <h1>Discover New Music</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./images/microphone.svg" alt="">
+                            <p>Charts</p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/albums.svg" alt="">
+                            <p>Albums</p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/more.svg" alt="">
+                            <p>More</p>
+                        </div>
+                    </div>
+                    <p class="info-p">By joining you can benefit by listening to the latest albums released</p>
+                </div>
+                <div class="new">
+                    <img src="./images/covers.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+            <div class="find">
+                <ul class="find-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul class="social-links">
+                <a href="#"><img src="./images/twitter.svg" alt="">Twitter</a>
+                <a href="#"><img src="./images/facebook.svg" alt="">Facebook</a>
+                </ul>
+            </div>        
+    </footer>  
+    
+    <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script>
+        let burger = document.getElementById('burger');
+        console.log(burger)
+        
+        let links = document.querySelector('.links');
+        
+        
+        burger.addEventListener('click', () =>{
+        
+            document.querySelector('.links').classList.toggle('linksActive');
+            document.getElementById('burger').classList.toggle('close');
+        });
+        
+    </script>
+</body>
+</html>

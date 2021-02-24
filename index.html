@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotifyyy</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="./images/logo.png" alt="soundwave">
+        <h1>Soundwave</h1>
+    </div>
+    <ul class="links">
+        <li><a href="./discover.html">Discover</a></li>
+        <li><a href="./join.html">Join</a></li>
+    </ul>
+    <div id="burger" class="burger">
+        <div class="stroke1"></div>
+        <div class="stroke2"></div>
+        <div class="stroke3"></div>
+    </div>
+    </header>
+
+    <main>
+        <div class="cover">
+            <img class="lady" src="./images/landing-page-girl.png" alt="">
+            <div class="music">
+                <h1>Feel The Music</h1>
+                <p>Stream over 20 thousand songs with one click</p>
+                <!-- <button class="join">Join Now</button> -->
+                <button class="join" type="submit">Join Now</button>
+            </div>
+        </div>
+    </main>
+    
+    <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script>
+        let burger = document.getElementById('burger');
+        console.log(burger)
+        
+        let links = document.querySelector('.links');
+        
+        
+        burger.addEventListener('click', () =>{
+        
+            document.querySelector('.links').classList.toggle('linksActive');
+            document.getElementById('burger').classList.toggle('close');
+        });
+        
+    </script>
+
+</body>
+</html>

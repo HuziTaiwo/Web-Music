@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="./join.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="soundwave">
+            <h1>Soundwave</h1>
+        </div>
+        <ul class="links">
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+        <div id="burger" class="burger">
+            <div class="stroke1"></div>
+            <div class="stroke2"></div>
+            <div class="stroke3"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="fun">
+            <div class="info">
+                <h1 class="fun-h1">Join the <span class="fun-p">fun</span></h1>
+            </div>
+            <form>
+                <label>Name:</label>
+                <input type="text" name="name" id="name">
+
+                <label>Email:</label>
+                <input type="email" name="email" id="email">
+
+                <label>Password:</label>
+                <input type="password" name="password" id="password">
+
+                <input type="button" value="Join Now">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="find">
+            <ul class="find-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul class="social-links">
+            <a href="#"><img src="./images/twitter.svg" alt="">Twitter</a>
+            <a href="#"><img src="./images/facebook.svg" alt="">Facebook</a>
+            </ul>
+        </div>        
+</footer> 
+    
+<div class="circles">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<script>
+let burger = document.getElementById('burger');
+console.log(burger)
+
+let links = document.querySelector('.links');
+
+
+burger.addEventListener('click', () =>{
+
+    document.querySelector('.links').classList.toggle('linksActive');
+    document.getElementById('burger').classList.toggle('close');
+});
+
+</script>
+</body>
+</html>
